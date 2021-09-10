@@ -1,0 +1,45 @@
+  .fa-heart {
+    color: pink;
+    font-size: 2.5em;
+    animation: scale 0.5s ease-out infinite;
+    position: absolute;    
+    height: 550px;    
+    bottom: 0;
+    right: 620px;    
+    padding: 10px;
+  } 
+
+  .animate-svg { 
+    stroke-width: 2px;
+    stroke: pink;      
+    stroke-dashoffset: 1000;
+    stroke-dasharray: 1000;
+    animation: svganimation 2s ease-in-out forwards infinite;
+  }
+  @keyframes svganimation{
+      0%{
+          stroke-dashoffset: 1000;
+
+      }70% {
+          stroke-dashoffset: 0;
+      } 100%{
+         stroke-dashoffset: 0; 
+      }
+  }
+  @keyframes scale {
+    50% {
+      transform: scale(0.9);
+    }
+  }
+  
+  footer {
+    position: absolute;    
+    height: 450px;    
+    bottom: 0;
+    right: 680px;    
+    padding: 5px;
+    text-transform: uppercase;
+  }
+   
+   
+  
